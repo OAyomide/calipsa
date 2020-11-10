@@ -1,0 +1,44 @@
+Arguments: 
+  /home/ayomide/.nvm/versions/node/v14.4.0/bin/node /usr/share/yarn/bin/yarn.js add http-code express mongoose axios socket.io
+
+PATH: 
+  /opt/gradle/gradle-6.6/bin:/home/ayomide/.nvm/versions/node/v14.4.0/bin:/home/ayomide/.cargo/bin:/opt/gradle/gradle-6.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/home/ayomide/go/bin:/home/ayomide/Android/Sdk/emulator:/home/ayomide/Android/Sdk/tools:/home/ayomide/Android/Sdk/tools/bin:/home/ayomide/Android/Sdk/platform-t
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  14.4.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/http-code: Not found
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66988:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140749:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141721:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141643:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1224:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "server",
+    "version": "1.0.0",
+    "description": "server-side of the 20 question game",
+    "main": "index.js",
+    "author": "Ayomide Onigbinde",
+    "license": "MIT",
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

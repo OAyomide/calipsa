@@ -1,0 +1,24 @@
+version: "3.7"
+
+services: 
+  client:
+    build: ./client
+    volumes:
+      - ./client:/usr/src/app
+    ports:
+      - "4200:4200"
+  server:
+    build: ./server
+    volumes:
+      - ./server:/usr/src/app
+    ports: 
+      - "4300:4300"
+    depends_on:
+      - db
+
+  db:
+    image: mongo:latest
+    volumes:
+      - ./db:/usr/src/db'
+    ports: 
+      - "27017:27017"
